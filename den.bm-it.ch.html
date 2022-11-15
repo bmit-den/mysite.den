@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=""en">
+
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=firefox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style_Sheet.css" type="text/css" media="screen" rel="stylesheet">
+    <title>Nevio De Maria</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header>
+        <div class="title">
+            Nevio De Maria
+            <!-- Titel der Homepage inklusive dem Titelbild--> 
+        </div>
+        
+        <div class="flex">
+            <img src="img/Netzwerk Titelseite.jpeg"/>
+            <!-- Das Titelbild soll nur im Kopf erscheinen-->
+        </div>
+                
+        <div>
+           
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname" name="usrname" required>
+              
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                  
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+              
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+                  
+        <div>
+            <ul>
+                <li>
+                    <a href="about.html"><div class="smalltitle">Über mich</div></a>
+                </li>
+                <li>
+                    <a href="lebenslauf.html"><div class="smalltitle">Lebenslauf</div></a>
+                </li>
+                <li>
+                    <a href="zeugnisse.html"><div class="smalltitle">Zeugnisse</div></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <div class="Fusszeile">
+            © Nevio De Maria </div>
+    </footer>
+
+</body>
+</html>
